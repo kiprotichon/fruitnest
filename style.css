@@ -32,7 +32,7 @@
 
   /* Navigation bar*/
   nav {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(138, 141, 137, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
@@ -69,7 +69,7 @@
 
   /* Header */
   header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1572441710263-293511f43b66') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/download.jpeg') no-repeat center center/cover;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -194,12 +194,13 @@
       font-size: 1.1rem;
       cursor: pointer;
       transition: background 0.3s;
+
   }
   .contact-form button:hover {
       background: #ffc107;
   }
   footer {
-      background: #222;
+      background: #000000;
       color: #aaa;
       padding: 1.5rem;
       text-align: center;
