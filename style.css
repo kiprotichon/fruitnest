@@ -7,7 +7,7 @@
   }
 
   body {
-    background: #f4f4f4;
+    background: #cfcece;
     color: #333;
   }
   section {
@@ -32,7 +32,7 @@
 
   /* Navigation bar*/
   nav {
-    background: rgba(138, 141, 137, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
@@ -70,6 +70,9 @@
   /* Header */
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/download.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -163,7 +166,7 @@
 
   /* Contact & Footer */
   #contact {
-      background: #333;
+      background: #2e7d32;
       color: #ffffff;
       border-radius: 20px 20px 0 0;
   }
@@ -189,7 +192,7 @@
       border: none;
       border-radius: 5px;
       background: #ffb300;
-      color: #333;
+      color: #211b1b;
       font-weight: 700;
       font-size: 1.1rem;
       cursor: pointer;
@@ -200,9 +203,53 @@
       background: #ffc107;
   }
   footer {
-      background: #000000;
-      color: #aaa;
+      background: #100f0f;
+      color: #ffffff;
       padding: 1.5rem;
       text-align: center;
       font-size: 0.9rem;
   }
+
+  footer social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer social-media a { 
+    color: #aaa;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  footer social-media a:hover {
+    color: #ffb300;
+  } 
+  footer social-media i {
+    font-size: 1.5rem;
+  }
+  footer social-media i:hover {
+    color: #ffb300;
+  }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+
+  
